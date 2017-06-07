@@ -1,0 +1,25 @@
+{
+  "name": "rest-demo",
+  "version": "1.0.0",
+  "description": "Angularjs Material Pagination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^5.0.1",
+    "body-parser": "^1.16.1",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "cucumber": "^2.0.0-rc.9",
+    "express": "^4.14.1",
+    "https": "^1.0.0",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.8.2",
+    "request": "^2.81.0",
+    "underscore": "^1.8.3"
+  }
+}

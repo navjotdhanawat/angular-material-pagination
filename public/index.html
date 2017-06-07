@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Material Angular Paging Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/../bower_components/angular-material/angular-material.min.css">
+
+    <script src="/../bower_components/angular/angular.min.js"></script>
+    <script src="/../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/../bower_components/angular-aria/angular-aria.min.js"></script>
+
+    <script src="/../bower_components/angular-material/angular-material.min.js"></script>
+    <!--<script src="/../bower_components/angular-material-paging/src/angular-material-paging.js"></script>-->
+
+    <script src="/../bower_components/material-angular-paging/build/dist.min.js"></script>
+    <script src="main.controller.js"></script>
+
+</head>
+
+<body ng-app="DemoApp" layout="column">
+<div flex ng-controller="MainController" layout="column">
+    <section flex>
+        <md-content layout-padding="">
+            <h1>Material Angular Pagination</h1>
+            <div>Loaded data form Page <strong>{{currentPage}}</strong></div>
+            <table>
+            <tr ng-repeat="x in users.docs">
+                <td>{{ x.id }}</td>
+                <td>{{ x.firstname }}</td>
+                <td>{{ x.lastname }}</td>
+                <td>{{ x.email }}</td>
+            </tr>
+            </table>
+        </md-content>
+    </section>
+
+    <section layout="row" layout-padding="">
+        <cl-paging flex cl-pages="paging.total" , cl-steps="6" , cl-page-changed="paging.onPageChanged()" ,
+                   cl-align="start start" , cl-current-page="paging.current"></cl-paging>
+
+    </section>
+
+</div>
+
+</body>
+</html>
