@@ -4,8 +4,6 @@ var Users = require('./models/users');
 
 
 module.exports = function (app) {
-
-
     app.get('/getUsers/:page', function (req, res) {
         var page = req.param('page');
 

@@ -11,9 +11,6 @@ app.controller("MainController", ['$scope', '$http', function ($scope, $http) {
 
     function loadPages() {
         console.log('Current page is : ' + $scope.paging.current);
-
-        // TODO : Load current page Data here
-
         $scope.currentPage = $scope.paging.current;
 
         $http.get("http://localhost:8080/getUsers/" + $scope.currentPage)

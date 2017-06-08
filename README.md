@@ -10,4 +10,4 @@ $ npm start
 ```
 
 
-See [The Next Fact Tutorials](http://www.thenextfact.com)
+See [The Next Fact Detailed Tutorials](http://www.thenextfact.com/angularjs-material-designed-pagination-using-mongoose-paginate-and-node-js/)
